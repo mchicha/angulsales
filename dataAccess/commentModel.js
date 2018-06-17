@@ -10,7 +10,7 @@ class Comment {
             date: {type: Sequelize.DATE },
             text: {type: Sequelize.TEXT}
         });
-        //customer.model.hasMany(this.model, { foreignKey: 'idCustomer' });
+        customer.model.hasMany(this.model, { foreignKey: 'idCustomer' });
     }
 
     getAllRows() {

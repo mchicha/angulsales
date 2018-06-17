@@ -15,11 +15,9 @@ class Customer {
             lastName: {type: Sequelize.STRING(30) },
             idCompany: {type: Sequelize.INTEGER },
             email: {type: Sequelize.STRING(40) },
-            phone: {type: Sequelize.STRING(15) },
-            idComments: {type: Sequelize.INTEGER }
+            phone: {type: Sequelize.STRING(15) }
         });
         this.model.belongsTo(companyModel, {foreignKey: 'idCompany'})
-        this.model.belongsTo(commentModel, {foreignKey: 'idCustomer'})
     }
 
     getAllRows() {

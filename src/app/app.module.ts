@@ -7,11 +7,17 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { CustomersComponent } from './customers/customers.component';
+import { CompaniesComponent } from './companies/companies.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavigationBarComponent,
+    CustomersComponent,
+    CompaniesComponent
     ],
   imports: [
     BrowserModule,

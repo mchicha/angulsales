@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-var company = require('../data_access/companyMmodel');
+var company = require('../dataAccess/companyMmodel');
 
 // router - type of middleware function
 // An object to which several server requests can be assigned to
